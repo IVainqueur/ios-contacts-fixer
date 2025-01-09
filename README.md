@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
+# Rwandan Contact Number Fixer
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native mobile app that helps you maintain consistent phone number formats for your Rwandan contacts. The app ensures each contact has both versions of their phone numbers: with and without the country code (e.g., "0788123456" and "+250788123456"), So that when an already existing contact calls you, the phone number is recognized.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 📱 Automatically detects Rwandan phone numbers in your contacts
+- 🔄 Adds missing number formats while preserving the original
+- ✨ Clean and intuitive user interface
+- 🔍 Search functionality to find specific contacts
+- ✅ Bulk selection and fixing of multiple contacts
+- 🏷️ Smart label management with prime notation (e.g., mobile, mobile', mobile'')
 
-   ```bash
-   npm install
-   ```
+## How It Works
 
-2. Start the app
+1. The app scans your contacts for Rwandan numbers (starting with "07" or "+2507")
+2. It identifies contacts that don't have both versions of their numbers
+3. You can fix contacts individually or select multiple for bulk fixing
+4. The app maintains proper labels by adding prime marks (') to distinguish between versions
 
-   ```bash
-    npx expo start
-   ```
+## Usage
 
-In the output, you'll find options to open the app in a
+1. Launch the app and grant contacts permission
+2. Browse the list of contacts that need fixing
+3. Either:
+   - Tap "Fix Contact" on individual contacts
+   - Select multiple contacts and use "Fix Selected Contacts"
+4. Pull to refresh the list after making changes
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Technical Details
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Built with React Native and Expo
+- Uses the `expo-contacts` API for contact management
+- Implements safe area handling for modern devices
+- Supports both light and dark themes
 
-## Get a fresh project
+## Requirements
 
-When you're ready, run:
+- iOS or Android device
+- Contacts permission
+- Expo Go app (for development)
 
-```bash
-npm run reset-project
-```
+## Development
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npx expo start`
 
-## Learn more
+## Privacy
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The app only reads and modifies phone numbers in your contacts. No data is collected or transmitted outside your device. 
