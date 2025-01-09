@@ -48,4 +48,11 @@ A React Native mobile app that helps you maintain consistent phone number format
 
 ## Privacy
 
-The app only reads and modifies phone numbers in your contacts. No data is collected or transmitted outside your device. 
+The app only reads and modifies phone numbers in your contacts. No data is collected or transmitted outside your device.
+
+## Support
+
+If you find this app helpful, consider:
+
+- ⭐ Starring the repository on GitHub
+- ☕ [Buying me a coffee](https://www.buymeacoffee.com/ivainqueur)
